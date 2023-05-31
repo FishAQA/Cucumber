@@ -1,10 +1,10 @@
-package com.weborama.GoldenFish.driver;
+package com.weborama.GoldenFish.framework.driver;
 
 import com.codeborne.selenide.Configuration;
 
 import java.util.Objects;
 
-import static com.weborama.admin.framework.driver.CapabilityFactor.getCapabilities;
+import static com.weborama.GoldenFish.framework.driver.CapabilityFactor.getCapabilities;
 
 public class DriverFactory {
 

@@ -1,4 +1,4 @@
-package com.weborama.GoldenFish.runner;
+package runner;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
                 "junit:target/cucumber-reports/CucumberTestRunner.xml"},
         monochrome = true,
         tags = "@all",
-        glue = "com.weborama.GoldenFish",
+//        glue = "steps",
         features = "classpath:com/weborama/GoldenFish/features/"
 )
 public class TestRunner{

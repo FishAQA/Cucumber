@@ -1,7 +1,7 @@
-package com.weborama.admin.page_object.keyclock;
+package com.weborama.GoldenFish.page_object.keyclock;
 
-import com.weborama.admin.framework.BasePage;
-import com.weborama.admin.page_object.app.ProjectsPage;
+import com.weborama.GoldenFish.framework.BasePage;
+import com.weborama.GoldenFish.page_object.app.projects.ProjectsPage;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;

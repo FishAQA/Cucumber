@@ -1,8 +1,8 @@
-package com.weborama.GoldenFish.driver;
+package com.weborama.GoldenFish.framework.driver;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import static com.weborama.admin.framework.driver.OptionsManager.*;
+import static com.weborama.GoldenFish.framework.driver.OptionsManager.*;
 
 public class CapabilityFactor {
 

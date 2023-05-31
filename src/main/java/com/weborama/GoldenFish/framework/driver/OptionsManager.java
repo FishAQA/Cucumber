@@ -1,4 +1,4 @@
-package com.weborama.GoldenFish.driver;
+package com.weborama.GoldenFish.framework.driver;
 
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.remote.DesiredCapabilities;

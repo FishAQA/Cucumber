@@ -1,9 +1,9 @@
-package com.weborama.GoldenFish.driver;
+package com.weborama.GoldenFish.framework.driver;
 
 import java.util.Objects;
 
-import static com.weborama.admin.framework.driver.DriverFactory.selectBrowserForDriver;
-import static com.weborama.admin.framework.driver.DriverFactory.setRemoteDriver;
+import static com.weborama.GoldenFish.framework.driver.DriverFactory.selectBrowserForDriver;
+import static com.weborama.GoldenFish.framework.driver.DriverFactory.setRemoteDriver;
 
 public class DriverManager {
 
@@ -13,8 +13,7 @@ public class DriverManager {
         selectServer(Objects.requireNonNullElse(server, DEFAULT_SERVER), driverType);
     }
 
-    private static synchronized void initLocalDriver(String driverType) {
-        selectBrowserForDriver(driverType);
+    private static synchronized void initLocalDriver(String driverType) {selectBrowserForDriver(driverType);
     }
     private static synchronized void initRemoteDriver(String driverType) {
         setRemoteDriver(driverType);

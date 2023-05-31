@@ -59,8 +59,8 @@ public class TestSteps {
                 .should(exist);
     }
 
-    @And("New project is opened in the Breadcrumbs")
-    public void newProjectIsOpenedInTheBreadcrumbs() {
+    @And("New project is opened in the Breadcrumbs next to the Home icon")
+    public void newProjectIsOpenedInTheBreadcrumbsNextToTheHomeIcon() {
         projectsPage.breadcrumb
                 .lastChild()
                 .shouldHave(attributeMatching("title", newProjectName))
@@ -75,5 +75,27 @@ public class TestSteps {
         projectsPage.segmentsBreakdown
                 .lastChild()
                 .shouldHave(text(newProjectName));
+    }
+
+    @Given("A subproject exists in the root folder")
+    public void aSubprojectExistsInTheRootFolder() {
+        projectsPage.ProjectsTreeItems
+                .findBy(text(newProjectName)).should(exist);
+    }
+
+    @And("Selects the subproject")
+    public void selectsTheSubproject() {
+        newProjectModal.treeItems
+                .findBy(text(newProjectName)).click();
+    }
+
+    @And("New project is opened in the Breadcrumbs next to the parent project")
+    public void newProjectIsOpenedInTheBreadcrumbsNextToTheParentProject() {
+        projectsPage.breadcrumb
+                .lastChild()
+                .find(By.className("is-active"))
+                .shouldHave(attributeMatching("title", newProjectName))
+                .parent().preceding(0)
+                .shouldHave(attributeMatching("title", newProjectName));
     }
 }
