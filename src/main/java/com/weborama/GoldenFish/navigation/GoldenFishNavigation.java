@@ -1,6 +1,6 @@
-package com.weborama.admin.navigation;
+package com.weborama.GoldenFish.navigation;
 
-import com.weborama.admin.page_object.keyclock.Keycloak;
+import com.weborama.GoldenFish.page_object.keyclock.Keycloak;
 
 public class GoldenFishNavigation{
 

@@ -1,4 +1,4 @@
-package com.it_academy.onliner.framework;
+package com.weborama.GoldenFish.framework;
 
 import com.codeborne.selenide.Configuration;
 
